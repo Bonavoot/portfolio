@@ -1,13 +1,14 @@
-import { useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
-    const navigate = useNavigate()
     return (
-        <>
-        <a onClick={() => navigate("/")}>Home</a>
-        <a onClick={() => navigate("/about")}>About</a>
-        <a onClick={() => navigate("/contact")}>Contact</a>
-        </>
+     <div className="navbar">
+        <div className="links">
+        <Link to="/">HOME</Link>
+        <Link to="/about">ABOUT</Link>
+        <Link to="/contact">CONTACT</Link>
+        </div>
+     </div>
     )
 }
 
